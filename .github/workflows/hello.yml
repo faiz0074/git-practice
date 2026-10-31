@@ -1,0 +1,17 @@
+
+name: My First CI Workflow
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print welcome message
+        run: echo "Hello! My first GitHub Action is running."
+
+      - name: Print completion message
+        run: echo "Workflow completed successfully!"
