@@ -10,7 +10,7 @@ def test_status_code():
 def test_user_name():
     response = requests.get(f"{BASE_URL}/users/1", timeout=10)
     data = response.json()
-    assert data["name"] == "Leanne Graham"
+    assert data["name"] == "Cristiano Ronaldo"
 
 def test_user_email():
     response = requests.get(f"{BASE_URL}/users/1", timeout=10)
