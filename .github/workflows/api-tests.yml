@@ -23,3 +23,7 @@ jobs:
 
       - name: Run API Tests
         run: python -m pytest test_api.py -v
+
+      - name: Pipeline completed
+        if: always()
+        run: echo "Pipeline execution finished"
